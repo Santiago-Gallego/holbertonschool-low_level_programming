@@ -1,11 +1,12 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * add - check the code for Holberton School students.
+ * @n: variable
+ * @j: variable
  * Return: Always 0.
  */
-int  add ( int n, int j)
-{    
-	n + = j;
-	return(n);
+int  add(int n, int j)
+{
+	n += j;
+	return (n);
 }

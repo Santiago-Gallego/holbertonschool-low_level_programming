@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_sign - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
