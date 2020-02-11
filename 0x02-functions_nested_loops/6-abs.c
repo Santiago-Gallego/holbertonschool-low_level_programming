@@ -4,16 +4,9 @@
  *
  * Return: Always 0.
  */
-int _abs(int a)
+nt _abs(int c)
 {
-	if (a >= 0)
-	{
-		return (a);
-	}
-	else
-	{
-		a = -1 * a;
-		return (a);
-	}
-	return (0);
+	if (c < 0)
+		c *= -1;
+	return (c);
 }
