@@ -55,12 +55,12 @@ void  _putnumber(int n)
  */
 void  print_to_98(int n)
 {
-        if (n > 98)
-                while (n > 98)
-                        _putnumber(n--);
-        if (n < 98)
-                while (n < 98)
-                        _putnumber(n++);
-        if (n == 98)
-                _putnumber(98);
+if (n > 98)
+	while (n > 98)
+		_putnumber(n--);
+if (n < 98)
+	while (n < 98)
+		_putnumber(n++);
+if (n == 98)
+	_putnumber(98);
 }
