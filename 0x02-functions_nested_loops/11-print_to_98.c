@@ -1,21 +1,5 @@
-# incluye  " holberton.h"
-# include  < stdio.h >
-/**
- * print_to_98 - check the code for Holberton School students.
- * @n: variable
- * Return: Always 0.
- */
-void  print_to_98(int n)
-{
-	if (n > 98)
-		while (n > 98)
-			_putnumber(n--);
-	if (n < 98)
-		while (n < 98)
-			_putnumber(n++);
-	if (n == 98)
-		_putnumber(98);
-}
+#include "holberton.h"
+#include <stdio.h>
 /**
  * _putnumber - check the code for Holberton School students.
  * @n: variable
@@ -63,4 +47,20 @@ void  _putnumber(int n)
 		_putchar(',');
 		_putchar(' ');
 	}
+}
+/**
+ * print_to_98 - check the code for Holberton School students.
+ * @n: variable
+ * Return: Always 0.
+ */
+void  print_to_98(int n)
+{
+        if (n > 98)
+                while (n > 98)
+                        _putnumber(n--);
+        if (n < 98)
+                while (n < 98)
+                        _putnumber(n++);
+        if (n == 98)
+                _putnumber(98);
 }
