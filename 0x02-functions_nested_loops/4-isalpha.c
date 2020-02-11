@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _isalpha - check the code for Holberton School students.
- *
+ * @a: variable
  * Return: Always 0.
  */
 int _isalpha(int a)
