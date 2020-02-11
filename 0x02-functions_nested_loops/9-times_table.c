@@ -8,7 +8,6 @@ int printNun (int a)
                 _putchar(a / 10 + '0');
                 _putchar(a % 10 + '0');
         }
-	
 }
 void times_table(void)
 {
