@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * cap_string 
+ * @s: string to be encoded
+ *
+ * Return: pointer
+ */
 char *cap_string(char *s)
 {
 	int i;
