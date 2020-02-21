@@ -1,10 +1,12 @@
-#include <stdio.h>
+  
+#include "holberton.h"
+
 /**
- * cap_string 
- * @s: string to be encoded
- * @i: variable
- * Return: pointer
+ * cap_string - capitalizes all words of a string
+ * @s: string to capitalize
+ * Return: string;
  */
+
 char *cap_string(char *s)
 {
 	int i;
