@@ -2,7 +2,7 @@
 /**
  * cap_string 
  * @s: string to be encoded
- *
+ * @i: variable
  * Return: pointer
  */
 char *cap_string(char *s)
