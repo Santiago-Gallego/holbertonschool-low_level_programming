@@ -22,7 +22,6 @@ int palindrome_helper(char *s, int len, int i)
 {
 	if (_strlen(s) == 0)
 		return (0);
-
 	if (*(s + i) != *(s + len - 1))
 		return (0);
 	else if (i > (len - 1))
