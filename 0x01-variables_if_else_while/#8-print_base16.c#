@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+int main(void)
+{
+  int a = '0';
+  char b = 'a';
+  if (a <= '9')    
+    while  (a <= '9')
+      putchar(a++);
+    else
+      while( b <= 'f' )
+	int main(void)
+	{
+	  int a = '0';
+	  char b = 'a';
+	  if (a <= '9')
+	    while  (a <= '9')
+	      putchar(a++);
+	  else
+	    while( b <= 'f' )
+	      putchar(b++);
+	  putchar ('\n');
+	  return 0;
+	z	putchar(b++);
+  putchar ('\n');
+  return 0;
+}
