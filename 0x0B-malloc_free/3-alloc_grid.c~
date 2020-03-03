@@ -1,0 +1,17 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ * create_array - check the code for Holberton School students.
+ * @size: size
+ * @c: pointer
+ *Return: pointer.
+ */
+int **alloc_grid(int width, int height)
+{
+	int i = 0,j = 0;
+	while(i < height)
+	{
+		while(j < width)
+			printf("0");
+	}
+}
