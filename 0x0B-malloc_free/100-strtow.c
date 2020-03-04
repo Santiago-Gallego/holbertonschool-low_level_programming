@@ -1,11 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * strtow - check the code for Holberton School students.
- * @str: pointer
- * Return: 1 if an error occurred, 0 otherwise
- */
 char **strtow(char *str)
 {
 	char **array;
@@ -24,7 +19,7 @@ char **strtow(char *str)
 	array = malloc(((count + 1) * sizeof(char *)));
 	if (array == NULL)
 		return (NULL);
-	for (i = 0; str[i] !=  '\0' ; i++)
+	for (i = 0; str[i] !=  '\0' && k < count; i++)
 	{
 		if (str[i] != ' ')
 		{
