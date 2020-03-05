@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * _calloc - check the code for Holberton School students.
- * @nmemb: variable
- * @size: variable
+ * array_range - check the code for Holberton School students.
+ * @min: variable
+ * @max: variable
  * Return: Always 0.
  */
 int *array_range(int min, int max)
@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-        diferencia = max - min;
+	diferencia = max - min;
 	ptr = malloc((diferencia + 1) * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
