@@ -4,7 +4,7 @@
 
 int _atoi(char *s)
 {
-	int l = i = 0, neg = -1;
+	int l = 0, i = 0, neg = -1;
 
 	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
 	{
@@ -34,6 +34,8 @@ int _isNum(char *num)
 
 int main(int argc, char *argv[])
 {
+	int i;
+
 	if (argc != 3 || !(_isNum(argv[1])) || !(_isNum(argv[2])))
 	{
 		char *error = "Error";
