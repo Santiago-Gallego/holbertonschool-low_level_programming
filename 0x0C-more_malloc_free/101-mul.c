@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include "holberton.h"
 
-
+/**
+ * _strlen - check the code for Holberton School students.
+ * @s: pointer
+ * Return: Always 0.
+ */
 int _strlen(char *s)
 {
 	int i;
@@ -12,6 +16,11 @@ int _strlen(char *s)
 		++i;
 	return (i);
 }
+/**
+ * _isNum - check the code for Holberton School students.
+ * @num: is array of numbers
+ * Return: Always 0.
+ */
 int _isNum(char *num)
 {
 	int i;
@@ -23,9 +32,15 @@ int _isNum(char *num)
 	}
 	return (1);
 }
+/**
+ * main - check the code for Holberton School students.
+ * @argc: size
+ * @argv: array pointer
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
-	int i, j, t1,t2, save, prod, tt;
+	int i, j, t1, t2, save, prod, tt;
 	char *res;
 
 	if (argc != 3 || !(_isNum(argv[1])) || !(_isNum(argv[2])))
@@ -35,7 +50,7 @@ int main(int argc, char *argv[])
 	}
 	t1 = _strlen(argv[1]), t2 = _strlen(argv[2]);
 	tt = t1 + t2;
-	res = malloc(sizeof(int *) * (t1 + t2));
+	res = malloc(sizeof(char *) * (t1 + t2));
 	if (res == NULL)
 		puts("Error"), exit(98);
 
@@ -48,14 +63,14 @@ int main(int argc, char *argv[])
 			save =  (prod / 10);
 			res[(i + j) + 1] += (prod % 10);
 			if (res[(i + j) + 1] > 9)
-                        {
-                                res[i + j] += res[(i + j) + 1] / 10;
-                                res[(i + j) + 1] = res[(i + j) + 1] % 10;
-                        }
+			{
+				res[i + j] += res[(i + j) + 1] / 10;
+				res[(i + j) + 1] = res[(i + j) + 1] % 10;
+			}
 			res[(i + j)] += save;
 		}
 	}
-        if (res[0] == 0)
+	if (res[0] == 0)
 		i = 1;
 	else
 		i = 0;
@@ -63,5 +78,5 @@ int main(int argc, char *argv[])
 		printf("%d", res[i]);
 	printf("\n");
 	free(res);
-	return(0);
+	return (0);
 }
