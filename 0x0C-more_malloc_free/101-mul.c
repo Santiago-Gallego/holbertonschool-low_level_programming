@@ -82,11 +82,11 @@ int main(int argc, char *argv[])
 	}
 	i = res[0] == 0 ? 1 : 0;
 	if (check_zero(res) == 1)
-		_putchar('0');
+		printf("0");
 	else
 		for (; i < tt; i++)
-			_putchar(res[i] + '0');
-	_putchar('\n');
+			printf("%i",res[i]);
+	printf("\n");
 	free(res);
 	return (0);
 }
