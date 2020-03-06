@@ -80,15 +80,13 @@ int main(int argc, char *argv[])
 			res[(i + j)] += save;
 		}
 	}
-i = res[0] == 0 ? 1 : 0;
-if (check_zero(res) == 1)
-_putchar('0');
-else
+	if (result[0] == 0)
+		i = 1;
+	else
 		i = 0;
-	for (; i < tt; i++)
-		if(res[i] == 0)
-		printf("%d", res[i]);
+	for (; i < length; i++)
+		printf("%d", result[i]);
 	printf("\n");
-	free(res);
+	free(result);
 	return (0);
 }
