@@ -1,7 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-
+/**
+ * check_zero - Check if array has plenty zeros.
+ * @zeros: Array to check
+ * Return: 1 or 0.
+ */
+int check_zero(char *zeros)
+{
+	if (zeros[0] == 0 && zeros[1] == 0 && zeros[1] == 0)
+		return (1);
+	return (0);
+}
 /**
  * _strlen - check the code for Holberton School students.
  * @s: pointer
@@ -70,13 +80,13 @@ int main(int argc, char *argv[])
 			res[(i + j)] += save;
 		}
 	}
-	if (result[0] == 0)
-		i = 1;
+	i = f_res[0] == 0 ? 1 : 0;
+	if (check_zero(f_res) == 1)
+		_putchar('0');
 	else
-		i = 0;
-	for (; i < length; i++)
-		printf("%d", result[i]);
-	printf("\n");
-	free(result);
+		for (; i < total_size; i++)
+			_putchar(f_res[i] + '0');
+	_putchar('\n');
+	free(f_res);
 	return (0);
 }
