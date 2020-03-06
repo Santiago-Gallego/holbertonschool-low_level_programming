@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 		printf("0");
 	else
 		for (; i < tt; i++)
-			printf("%i",res[i]);
+			printf("%i", res[i]);
 	printf("\n");
 	free(res);
 	return (0);
