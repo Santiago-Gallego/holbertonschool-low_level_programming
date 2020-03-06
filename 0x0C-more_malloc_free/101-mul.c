@@ -80,13 +80,13 @@ int main(int argc, char *argv[])
 			res[(i + j)] += save;
 		}
 	}
-	i = f_res[0] == 0 ? 1 : 0;
-	if (check_zero(f_res) == 1)
+	i = res[0] == 0 ? 1 : 0;
+	if (check_zero(res) == 1)
 		_putchar('0');
 	else
-		for (; i < total_size; i++)
-			_putchar(f_res[i] + '0');
+		for (; i < tt; i++)
+			_putchar(res[i] + '0');
 	_putchar('\n');
-	free(f_res);
+	free(res);
 	return (0);
 }
