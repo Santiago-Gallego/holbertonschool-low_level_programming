@@ -80,9 +80,10 @@ int main(int argc, char *argv[])
 			res[(i + j)] += save;
 		}
 	}
-	if (check_zero(res) == 1)
-		_putchar('0');
-	else
+i = f_res[0] == 0 ? 1 : 0;
+if (check_zero(res) == 1)
+_putchar('0');
+else
 		i = 0;
 	for (; i < tt; i++)
 		if(res[i] == 0)
