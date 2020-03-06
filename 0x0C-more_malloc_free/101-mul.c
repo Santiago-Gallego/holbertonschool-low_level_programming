@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 			res[(i + j)] += save;
 		}
 	}
-i = f_res[0] == 0 ? 1 : 0;
+i = res[0] == 0 ? 1 : 0;
 if (check_zero(res) == 1)
 _putchar('0');
 else
