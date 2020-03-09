@@ -1,3 +1,1 @@
-#warning "Hello, Holberton"
-main()
-{}
+#define l = 'Hello, Holberton \n' l 
