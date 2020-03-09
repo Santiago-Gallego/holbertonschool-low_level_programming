@@ -5,32 +5,32 @@
  * @str: pointer
  * Return: Always 0.
  */
-char *_str(char *str)
+char *_str(char *s)
 {
-	int c = 0, s = 0;
+	int i = 0, j = 0;
 
-	char *d;
+	char *cpy;
 
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
-	while (str[s] != '\0')
+	while (s[j] != '\0')
 	{
-		s++;
-		c++;
+		j++;
+		i++;
 	}
-	c = 0;
-	d = malloc(sizeof(char) * (s + 1));
-	if (d == NULL)
+	i = 0;
+	cpy = malloc(sizeof(char) * (j + 1));
+	if (cpy == NULL)
 		return (NULL);
-	while (c < (s + 1))
+	while (i < (j + 1))
 	{
-		d[c] = str[c];
-		c++;
+		cpy[i] = s[i];
+		i++;
 	}
 
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
-	return (d);
+	return (cpy);
 }
 /**
  * new_dog - Initilize the values of variables to new dog
