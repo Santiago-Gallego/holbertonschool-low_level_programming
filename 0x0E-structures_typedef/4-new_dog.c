@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _str - check the code for Holberton School students.
- * @str: pointer
+ * @s: pointer
  * Return: Always 0.
  */
 char *_str(char *s)
