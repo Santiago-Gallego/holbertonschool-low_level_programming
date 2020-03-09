@@ -2,35 +2,35 @@
 #include <stdlib.h>
 /**
  * _str - check the code for Holberton School students.
- * @s: pointer
+ * @str: pointer
  * Return: Always 0.
  */
-char *_str(char *s)
+char *_str(char *str)
 {
-	int i, j;
+	int c = 0, s = 0;
 
-	char *cpy;
+	char *d;
 
-	if (s == NULL)
+	if (str == NULL)
 		return (NULL);
-	while (s[j] != '\0')
+	while (str[s] != '\0')
 	{
-		j++;
-		i++;
+		s++;
+		c++;
 	}
-	i = 0;
-	cpy = malloc(sizeof(char) * (j + 1));
-	if (cpy == NULL)
+	c = 0;
+	d = malloc(sizeof(char) * (s + 1));
+	if (d == NULL)
 		return (NULL);
-	while (i < (j + 1))
+	while (c < (s + 1))
 	{
-		cpy[i] = s[i];
-		i++;
+		d[c] = str[c];
+		c++;
 	}
 
-	if (s == NULL)
+	if (str == NULL)
 		return (NULL);
-	return (cpy);
+	return (d);
 }
 /**
  * new_dog - Initilize the values of variables to new dog
