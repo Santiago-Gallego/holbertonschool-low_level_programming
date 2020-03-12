@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * show_mem_rep - shows rep
+ * show - shows rep
  * @start: start of rep
  * @n: number of bytes
  */
