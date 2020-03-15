@@ -3,37 +3,37 @@
  * print_i - prints int
  * @list: arguement of list
  */
-void print_i(va_list list)
+void print_i(va_list list, char *s)
 {
-	printf("%s%d", ", ", va_arg(list, int));
+	printf("%s%d", s,va_arg(list, int));
 }
 /**
  * print_c - prints char
  * @list: arguement char
  */
-void print_c(va_list list)
+void print_c(va_list list char *s)
 {
-	printf("%s%c", "", va_arg(list, int));
+	printf("%s%c", s,va_arg(list, int));
 }
 /**
  * print_s - prints string
  * @list: list to print
  */
-void print_s(va_list list)
+void print_s(va_list list, char *ss)
 {
 	char *s = va_arg(list, char *);
 
 	if (s == NULL)
 		s = "(nil)";
-	printf("%s%s", ", ", s);
+	printf("%s%s", ss, s);
 }
 /**
  * print_f - prints floats
  * @list: next arguement of list to print
  */
-void print_f(va_list list)
+void print_f(va_list list, cahar *s)
 {
-	printf("%s%f", ", ", va_arg(list, double));
+	printf("%s%f", s, va_arg(list, double));
 }
 /**
  * print_all - prints out all stuff
@@ -44,16 +44,20 @@ void print_all(const char * const format, ...)
 	va_list list;
 	int i = 0, j;
 	fm_t fm[] = {{"c", print_c}, {"i", print_i}, {"f", print_f}, {"s", print_s}};
-
+	char *s = ""
 	va_start(list, format);
-	while (format[i] != '\0')
+	while (format[i] != '\0' && !format)
 	{
 		j = 0;
 		while (j < 4)
 		{
 			if (format[i] == *(fm[j]).fm)
-				fm[j].p(list, "");
-			j++;
+			{
+				printf("%s",sep);
+				fm[j].p(list, s);
+			        j++;
+				s = ", ";
+			}		
 		}
 		i++;
 	}
