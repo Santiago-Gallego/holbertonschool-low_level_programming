@@ -43,17 +43,17 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	int i = 0, j;
-	fm_t fm[] = {{'c', print_c}, {'i', print_i}, {'f', print_f}, {'s', print_s},
-		     {0, NULL}};
+	fm_t fm[] = {{"c", print_c}, {"i", print_i}, {"f", print_f}, {"s", print_s},
+		     {NULL, NULL}};
 	char *sep = "";
 
 	va_start(list, format);
-	while (format[i] && format)
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		while (fm[j].fm )
+		while (fm[j].fm != NULL)
 		{
-			if (format[i] == fm[j].fm)
+			if (format[i] == fm[j].fm[0])
 			{
 				printf("%s", sep);
 				fm[j].p(list);
