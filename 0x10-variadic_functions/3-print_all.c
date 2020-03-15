@@ -53,7 +53,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (fm[j].fm != NULL)
 		{
-			if (format[i] == *(fm[j]).fm)
+			if (format[i] == fm[j].fm[0])
 			{
 				printf("%s", sep);
 				fm[j].p(list);
