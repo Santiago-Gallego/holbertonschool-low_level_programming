@@ -10,7 +10,7 @@ void print_all(const char * const format, ...);
 
 typedef struct fm
 {
-	char *fm;
+	char fm;
 	void (*p)();
 } fm_t;
 #endif
