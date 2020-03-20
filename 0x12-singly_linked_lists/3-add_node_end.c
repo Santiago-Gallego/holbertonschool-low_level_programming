@@ -14,9 +14,10 @@ int _strlen(const char *s)
 	return (i);
 }
 /**
- * _strlen - check the code for Holberton School students.
+ * add_node_end - check the code for Holberton School students.
  * @head: nodos
  * @str: string
+ * Return: list
  */
 
 list_t *add_node_end(list_t **head, const char *str)
