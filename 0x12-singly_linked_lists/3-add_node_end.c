@@ -23,20 +23,20 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ptr = malloc(sizeof(list_t));
 	list_t *aux;
-	
+
 	if (ptr == NULL)
 		return (NULL);
 	ptr->str = strdup(str);
 	ptr->len = _strlen(str);
 	ptr->next = NULL;
-	if(*head == NULL)
+	if (*head == NULL)
 		*head = ptr;
 	else
 	{
 		aux = *head;
-		while(aux->next != NULL)
+		while (aux->next != NULL)
 			aux = aux->next;
 		aux->next = ptr;
 	}
-	return(ptr);
+	return (ptr);
 }
