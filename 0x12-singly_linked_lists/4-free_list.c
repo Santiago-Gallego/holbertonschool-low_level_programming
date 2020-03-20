@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * _strlen - check the code for Holberton School students.
+ * free_list - check the code for Holberton School students.
  * @head: nodos
  * Return: Always 0.
  */
