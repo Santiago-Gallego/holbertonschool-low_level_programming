@@ -10,6 +10,8 @@ int _help(listint_t *h)
 	listint_t *tmp = h, *tmp_2;
 	int i, j, size = 0, val = 0;
 
+	if (!h|| !h->next)
+		return (0);
 	for (i = 0; tmp; i++, tmp = tmp->next)
 	{
 		tmp_2 = h;
@@ -29,6 +31,7 @@ int _help(listint_t *h)
 		if (val == 1)
 			break;
 	}
+
 	return (size);
 }
 /**
