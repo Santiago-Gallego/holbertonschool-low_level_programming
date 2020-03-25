@@ -4,7 +4,7 @@
 /**
  * _help - frees a linked list ptr
  * @h: head of linked list
- * return: nodes
+ * Return: number of nodes from list
  */
 int _help(listint_t *h)
 {
