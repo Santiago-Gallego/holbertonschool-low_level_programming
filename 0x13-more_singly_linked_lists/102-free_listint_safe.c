@@ -8,7 +8,7 @@
 int _help(listint_t *h)
 {
 	listint_t *tmp = h, *tmp_2;
-	int i, j, size = 0;
+	int i, j, size = 0, val = 0;
 
 	for (i = 0; tmp; i++, tmp = tmp->next)
 	{
@@ -17,12 +17,17 @@ int _help(listint_t *h)
 		while (i > j)
 		{
 			if (tmp == tmp_2)
+			{
+			        val = 1;
 				break;
+			}
 			j++;
 			tmp_2 = tmp_2->next;
 		}
 		if (j > size)
 			size = j;
+		if (val == 1)
+			break;
 	}
 	return (size);
 }
@@ -34,11 +39,11 @@ int _help(listint_t *h)
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *tmp;
-	size_t i, size;
+	size_t i, size ;
 
-	if (*h != NULL)
-		return (0);
+	
 	size = _help(*h);
+
 	for (i = 0; i < size; i++)
 	{
 		tmp = *h;
