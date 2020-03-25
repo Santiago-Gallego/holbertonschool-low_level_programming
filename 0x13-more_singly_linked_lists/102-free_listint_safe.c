@@ -2,8 +2,9 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * _free - frees a linked list ptr
- * @head: head of linked list
+ * _help - frees a linked list ptr
+ * @h: head of linked list
+ * return: nodes
  */
 int _help(listint_t *h)
 {
@@ -18,7 +19,7 @@ int _help(listint_t *h)
 		{
 			if (tmp == tmp_2)
 			{
-			        val = 1;
+				val = 1;
 				break;
 			}
 			j++;
@@ -40,9 +41,8 @@ int _help(listint_t *h)
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *tmp;
-	size_t i, size ;
+	size_t i, size;
 
-	
 	if (!*h || !(*h)->next)
 		return (0);
 	size = _help(*h);
@@ -56,5 +56,5 @@ size_t free_listint_safe(listint_t **h)
 	*h = (*h)->next;
 	free(tmp);
 	*h = NULL;
-	return (i + 1);
+	return (i += 1);
 }
