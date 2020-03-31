@@ -1,19 +1,5 @@
 #include "holberton.h"
 /**
- * _len - returns length of string
- * @s: character of string
- * Return: length of string
- */
-int _len(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != 0; i++)
-	{
-	}
-	return (i);
-}
-/**
  * create_file - check the code for Holberton School students.
  * @filename: file to create
  * @text_content:string to write
@@ -32,7 +18,8 @@ int create_file(const char *filename, char *text_content)
 	if (pf == -1)
 		return (-1);
 
-
+	while (text_content[i] != 0)
+			i++;
 		if (text_content == NULL)
 		{
 			close(pf);
