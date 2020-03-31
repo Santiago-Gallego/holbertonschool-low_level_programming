@@ -1,5 +1,8 @@
 #ifndef file_IO
 #define file_IO
+#include <unistd.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <stddef.h>

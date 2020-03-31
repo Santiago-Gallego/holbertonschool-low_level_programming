@@ -1,7 +1,4 @@
 #include "holberton.h"
-#include <unistd.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 /**
  * read_textfile - reads a text file
  * @filename: file to read
