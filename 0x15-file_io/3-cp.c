@@ -8,7 +8,7 @@
  */
 int main(int ac, char **av)
 {
-        int fd_from, fd_to;
+	int fd_from, fd_to;
 	int check_in, check_out;
 	char buffer[1024];
 	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
