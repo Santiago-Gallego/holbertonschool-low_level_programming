@@ -1,23 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Sum even Fibonacci numbers under 4,000,000
+ * main - Print the first 50 Fibonacci numbers
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-unsigned long int num1 = 2, num2 = 3, sum = 2, temp = 0;
+unsigned long int num1 = 1, num2 = 2, next;
+int count;
 
-while (temp < 4000000)
-{
-temp = num1 + num2;
-if (temp % 2 == 0)
-sum = sum + temp;
-num1 = num2;
-num2 = temp;
+for (count = 1; count <= 50; count++)
 }
-printf("%lu\n", sum);
+if (count <= 2)
+next = count;
+else
+{
+next = num1 + num2;
+num1 = num2;
+num2 = next;
+}
+printf("%lu", next);
+if (count < 50)
+printf(", ");
+}
+putchar('\n');
 return (0);
 }
