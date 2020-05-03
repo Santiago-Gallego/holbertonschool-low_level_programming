@@ -35,9 +35,9 @@ int main(int ac, char **av)
 		}
 	}
 	check_in = close(fd_from);
-	check_out = close(fd_to);
-	if (check_out == -1)
+	if (check_in == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from), exit(100);
+	check_out = close(fd_to);
 	if (check_out == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to), exit(100);
 	return (0);
