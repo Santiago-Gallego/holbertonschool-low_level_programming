@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * insert_dnodeint_at_index - inserts a new node
- * @head: head
- * @index: index
+ * @h: head
+ * @idx: index
  * @n: value of node
  * Return: the address or NULL if failed
  */
