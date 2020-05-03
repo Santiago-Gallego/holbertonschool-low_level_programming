@@ -1,14 +1,12 @@
-#ifndef DBL
-#define DBL
+#ifndef List
+#define List
 #include <stddef.h>
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
- *
- * Description: doubly linked list node structure
- * for Holberton project
+ * @prev: points 
+ * @next: points
+ * Description: doubly linked list
  */
 typedef struct dlistint_s
 {
