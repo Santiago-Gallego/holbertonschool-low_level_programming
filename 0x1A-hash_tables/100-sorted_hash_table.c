@@ -48,7 +48,7 @@ shash_node_t *make_shash_node(const char *key, const char *value)
 	return (tmp);
 }
 
-void add_to_sorted_list(shash_table_t *table, shash_node_t *node)
+void sorted_list_add(shash_table_t *table, shash_node_t *node)
 {
 	shash_node_t *tmp;
 
@@ -107,7 +107,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	tmp2->next = ht->array[index];
 	ht->array[index] = tmp2;
-	add_to_sorted_list(ht, tmp2);
+	sorted_list_add(ht, tmp2);
 	return (1);
 }
 
