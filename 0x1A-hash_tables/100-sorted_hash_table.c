@@ -1,5 +1,9 @@
 #include "hash_tables.h"
-
+/**
+ * shash_table_create - check the code for Holberton School students.
+ * @size: size table
+ * Return: shash table
+ */
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *tmp;
@@ -23,7 +27,12 @@ shash_table_t *shash_table_create(unsigned long int size)
 	}
 	return (tmp);
 }
-
+/**
+ * make_shash_node - make a node sorted hasta table
+ * @key: key data
+ * @value: value to stored
+ * Return: pointer toe new node.
+ */
 shash_node_t *make_shash_node(const char *key, const char *value)
 {
 	shash_node_t *tmp;
@@ -47,7 +56,12 @@ shash_node_t *make_shash_node(const char *key, const char *value)
 	tmp->next = tmp->snext = tmp->sprev = NULL;
 	return (tmp);
 }
-
+/**
+ * sorted_list_add - add a node sorted ascci
+ * @table: hash table sorted
+ * @node: node add
+ * Return: Always EXIT_SUCCESS.
+ */
 void sorted_list_add(shash_table_t *table, shash_node_t *node)
 {
 	shash_node_t *tmp;
@@ -77,7 +91,13 @@ void sorted_list_add(shash_table_t *table, shash_node_t *node)
 	table->stail->snext = node;
 	table->stail = node;
 }
-
+/**
+ * shash_table_set - set value in hsah table
+ * @ht: hash tabel
+ * @key: key
+ * @value: value add
+ * Return: 1 if succes or 0 is failed.
+ */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -110,7 +130,12 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	sorted_list_add(ht, tmp2);
 	return (1);
 }
-
+/**
+ * shash_table_get - rettrive value from hash tabel
+ * @ht: hash table
+ * @key: key of the data
+ * Return: value or NULL if failed
+ */
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int index;
@@ -129,12 +154,15 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	}
 	return (NULL);
 }
-
-
+/**
+ * shash_table_print - print hash tabel
+ * @ht: hash table to print
+ * Return: nothing.
+ */
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
-	char flag = 0; 
+	char flag = 0;
 
 	if (ht == NULL || ht->array == NULL)
 		return;
@@ -150,11 +178,15 @@ void shash_table_print(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
-
+/**
+ * shash_table_print_rev - print hash tabel rev
+ * @ht: hash table to print
+ * Return: nothing.
+ */
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *tmp;
-	char flag = 0; 
+	char flag = 0;
 
 	if (ht == NULL || ht->array == NULL)
 		return;
@@ -171,6 +203,11 @@ void shash_table_print_rev(const shash_table_t *ht)
 	printf("}\n");
 }
 
+/**
+ * shash_table_delete - delete hash tabel
+ * @ht: hash table to delete
+ * Return: nothing.
+ */
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int i;
