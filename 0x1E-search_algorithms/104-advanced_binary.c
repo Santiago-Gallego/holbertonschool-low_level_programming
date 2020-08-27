@@ -2,7 +2,7 @@
 
 /**
  * advanced_binary - searche value in an array of
- integers using the Binary search algorithm
+ * integers using the Binary search algorithm
  * @array: array to search
  * @size: size of the array
  * @value: value to search
@@ -18,7 +18,7 @@ int advanced_binary(int *array, size_t size, int value)
 
 /**
  * help_binary - searche value in an array of
- integers using recursion
+ * integers using recursion
  * @array: array to search the value in
  * @value: value to look for
  * @low: index of the low bound
