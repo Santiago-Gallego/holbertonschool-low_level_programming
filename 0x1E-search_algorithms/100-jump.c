@@ -3,7 +3,7 @@
 
 /**
  * jump_search - searche a value in a sorted array of integers
- using the Jump search algorithm
+ * using the Jump search algorithm
  * @array: array to look into
  * @size: size of the array
  * @value: value to look for
