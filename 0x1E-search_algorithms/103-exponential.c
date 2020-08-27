@@ -2,7 +2,7 @@
 
 /**
  * exponential_search - search value in an array with
- the exponential search algorithm
+ * the exponential search algorithm
  * @array: array to search
  * @size: size of the array
  * @value: value to rearch
@@ -32,7 +32,7 @@ int exponential_search(int *array, size_t size, int value)
 
 /**
  * help_binary - searche a value in an array of
- integers using recursion
+ * integers using recursion
  * @array: array to search the value in
  * @value: value to look for
  * @low: index of the low bound
