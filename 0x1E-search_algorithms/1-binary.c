@@ -5,7 +5,7 @@
 
 /**
  * binary_search - search for a value in an array of
- using the Binary search algorithm
+ * using the Binary search algorithm
  * @array: array to search
  * @size: size of the array
  * @value: value to search
@@ -21,7 +21,7 @@ int binary_search(int *array, size_t size, int value)
 
 /**
  * help_binary - search a value in an array of
- integers using recursion
+ * integers using recursion
  * @array: array to search the value in
  * @value: value to look for
  * @low: index of the low bound
@@ -33,7 +33,7 @@ int help_binary(int *array, int value, size_t low, size_t hig)
 	size_t mid;
 
 	array_print(array, low, hig);
-	if (hig == wid && array[low] != value)
+	if (hig == low && array[low] != value)
 		return (-1);
 
 	mid = ((hig - low) / 2) + low;
