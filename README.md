@@ -3,11 +3,6 @@
 ## Welcome
 Thank you for visiting my programming projects. The majority of the code was written in C, with a few files written in Assembly.
 
-## Table of Contents
-* [About](#about)
-@@ -14,20 +14,22 @@ Thanks for visiting my programming projects. The majority of the code was writte
-* [Credits](#credits)
-
 ## About
 This repository contains projects on the C programming language. The projects cover:
 - Compilation
